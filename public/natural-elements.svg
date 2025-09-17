@@ -1,0 +1,94 @@
+<svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="plantGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glowEffect" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background subtle pattern -->
+  <rect width="500" height="400" fill="#f0fdf4" opacity="0.3"/>
+  
+  <!-- Plant stems -->
+  <path d="M100 350 Q120 300, 140 250 Q160 200, 180 150" 
+        stroke="url(#plantGradient)" 
+        stroke-width="4" 
+        fill="none"/>
+  <path d="M300 350 Q280 300, 260 250 Q240 200, 220 150" 
+        stroke="url(#plantGradient)" 
+        stroke-width="4" 
+        fill="none"/>
+  <path d="M400 350 Q380 310, 360 270 Q340 230, 320 190" 
+        stroke="url(#plantGradient)" 
+        stroke-width="3" 
+        fill="none"/>
+  
+  <!-- Leaves -->
+  <ellipse cx="180" cy="150" rx="25" ry="15" 
+           fill="url(#plantGradient)" 
+           transform="rotate(-30 180 150)"/>
+  <ellipse cx="220" cy="150" rx="30" ry="18" 
+           fill="url(#plantGradient)" 
+           transform="rotate(45 220 150)"/>
+  <ellipse cx="320" cy="190" rx="20" ry="12" 
+           fill="url(#plantGradient)" 
+           transform="rotate(-45 320 190)"/>
+  
+  <!-- Additional smaller leaves -->
+  <ellipse cx="160" cy="200" rx="15" ry="10" 
+           fill="url(#plantGradient)" 
+           transform="rotate(60 160 200)" 
+           opacity="0.8"/>
+  <ellipse cx="240" cy="200" rx="18" ry="12" 
+           fill="url(#plantGradient)" 
+           transform="rotate(-60 240 200)" 
+           opacity="0.8"/>
+  <ellipse cx="340" cy="240" rx="12" ry="8" 
+           fill="url(#plantGradient)" 
+           transform="rotate(30 340 240)" 
+           opacity="0.7"/>
+  
+  <!-- Water drops -->
+  <path d="M150 100 Q150 85, 165 85 Q180 85, 180 100 Q180 115, 165 120 Q150 115, 150 100 Z" 
+        fill="url(#waterGradient)" 
+        opacity="0.8"/>
+  <path d="M280 80 Q280 68, 290 68 Q300 68, 300 80 Q300 92, 290 96 Q280 92, 280 80 Z" 
+        fill="url(#waterGradient)" 
+        opacity="0.7"/>
+  <path d="M370 120 Q370 110, 378 110 Q386 110, 386 120 Q386 130, 378 133 Q370 130, 370 120 Z" 
+        fill="url(#waterGradient)" 
+        opacity="0.6"/>
+  
+  <!-- Glow effects on water drops -->
+  <ellipse cx="165" cy="100" rx="15" ry="20" fill="url(#glowEffect)"/>
+  <ellipse cx="290" cy="80" rx="10" ry="14" fill="url(#glowEffect)"/>
+  <ellipse cx="378" cy="120" rx="8" ry="11" fill="url(#glowEffect)"/>
+  
+  <!-- Floating particles for purity -->
+  <circle cx="120" cy="180" r="2" fill="#22c55e" opacity="0.6"/>
+  <circle cx="250" cy="120" r="1.5" fill="#22c55e" opacity="0.5"/>
+  <circle cx="350" cy="160" r="2.5" fill="#22c55e" opacity="0.4"/>
+  <circle cx="200" cy="80" r="1" fill="#0ea5e9" opacity="0.6"/>
+  <circle cx="320" cy="100" r="1.8" fill="#0ea5e9" opacity="0.5"/>
+  <circle cx="180" cy="300" r="1.2" fill="#0ea5e9" opacity="0.4"/>
+  
+  <!-- Subtle energy lines -->
+  <path d="M50 200 Q150 180, 250 200 Q350 220, 450 200" 
+        stroke="#22c55e" 
+        stroke-width="1" 
+        fill="none" 
+        opacity="0.3"/>
+  <path d="M50 250 Q150 230, 250 250 Q350 270, 450 250" 
+        stroke="#0ea5e9" 
+        stroke-width="1" 
+        fill="none" 
+        opacity="0.3"/>
+</svg>

@@ -207,7 +207,7 @@ export default function LoginModal({ isOpen, onClose, onLogin }: LoginModalProps
           <div className="space-y-4 p-4">
             <div className="text-center space-y-2">
               <p className="text-sm text-gray-600">
-                We've sent a 6-digit OTP to
+                We&apos;ve sent a 6-digit OTP to
               </p>
               <p className="font-semibold text-gray-900">{otpSentTo}</p>
             </div>

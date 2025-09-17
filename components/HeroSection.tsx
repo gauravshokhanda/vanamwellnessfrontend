@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Star, Shield, Zap, Heart } from "lucide-react";
 
 export default function HeroSection() {
@@ -25,10 +26,12 @@ export default function HeroSection() {
         <div className="max-w-4xl text-white text-left pl-8 md:pl-16 lg:pl-24">
           {/* Logo */}
           <div className="mb-8">
-            <img
+            <Image
               src="/Logo/logo.jpg"
               alt="Vanam Wellness Logo"
-              className="h-16 mb-6"
+              width={64}
+              height={64}
+              className="mb-6"
             />
           </div>
 

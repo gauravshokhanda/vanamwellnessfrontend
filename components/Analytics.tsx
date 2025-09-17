@@ -98,6 +98,10 @@ export const trackViewItem = (currency = 'INR', value: number, items: any[]) => 
 // Declare gtag for TypeScript
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
+    gtag: {
+      (...args: any[]): void;
+      q?: any[];
+      l?: number;
+    };
   }
 }

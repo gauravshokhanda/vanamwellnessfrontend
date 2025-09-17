@@ -1,0 +1,64 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#65a30d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4d7c0f;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main leaf shape -->
+  <path d="M200 50 C250 70, 320 120, 340 180 C350 220, 330 250, 300 260 C250 270, 200 250, 180 220 C160 190, 150 160, 160 130 C170 100, 180 80, 200 50 Z" 
+        fill="url(#leafGradient)" 
+        filter="url(#glow)"
+        opacity="0.9"/>
+  
+  <!-- Leaf veins -->
+  <path d="M200 50 Q220 100, 240 150 Q250 180, 260 210" 
+        stroke="#15803d" 
+        stroke-width="2" 
+        fill="none" 
+        opacity="0.7"/>
+  <path d="M200 50 Q190 90, 185 130 Q180 160, 175 190" 
+        stroke="#15803d" 
+        stroke-width="1.5" 
+        fill="none" 
+        opacity="0.6"/>
+  <path d="M200 50 Q210 80, 220 110 Q225 130, 230 150" 
+        stroke="#15803d" 
+        stroke-width="1" 
+        fill="none" 
+        opacity="0.5"/>
+  
+  <!-- Stem -->
+  <rect x="195" y="250" width="10" height="40" 
+        fill="url(#stemGradient)" 
+        rx="5"/>
+  
+  <!-- Dewdrops for purity effect -->
+  <circle cx="220" cy="120" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="240" cy="160" r="3" fill="#ffffff" opacity="0.7"/>
+  <circle cx="190" cy="140" r="2.5" fill="#ffffff" opacity="0.6"/>
+  
+  <!-- Sparkle effects -->
+  <g opacity="0.8">
+    <path d="M280 100 L285 105 L280 110 L275 105 Z" fill="#fbbf24"/>
+    <path d="M280 95 L280 115 M270 105 L290 105" stroke="#fbbf24" stroke-width="1"/>
+  </g>
+  <g opacity="0.6">
+    <path d="M160 180 L163 183 L160 186 L157 183 Z" fill="#fbbf24"/>
+    <path d="M160 178 L160 188 M155 183 L165 183" stroke="#fbbf24" stroke-width="0.8"/>
+  </g>
+</svg>

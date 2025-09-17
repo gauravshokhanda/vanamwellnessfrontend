@@ -1,15 +1,18 @@
 'use client';
 
 import { Star, Shield, Zap, Heart } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ProductSummary() {
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden h-fit">
       {/* Product Image */}
       <div className="relative">
-        <img 
+        <Image 
           src="/Logo/logo.jpg" 
           alt="Supercharged Plant Power" 
+          width={400}
+          height={256}
           className="w-full h-64 object-cover"
         />
         <div className="absolute top-4 left-4">

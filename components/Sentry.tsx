@@ -17,7 +17,7 @@ export default function Sentry({ dsn, environment = 'production' }: SentryProps)
           dsn: dsn,
           environment: environment,
           integrations: [
-            new Sentry.BrowserTracing(),
+            // Remove BrowserTracing as it's not available in the current Sentry version
           ],
           tracesSampleRate: 1.0,
           beforeSend(event) {
@@ -28,9 +28,8 @@ export default function Sentry({ dsn, environment = 'production' }: SentryProps)
             return event;
           },
         });
-      }).catch(() => {
-        // Fallback if Sentry package is not installed
-        console.warn('Sentry package not found. Install @sentry/browser for error tracking.');
+      }).catch((error) => {
+        console.error('Failed to initialize Sentry:', error);
       });
     }
   }, [dsn, environment]);
@@ -40,7 +39,7 @@ export default function Sentry({ dsn, environment = 'production' }: SentryProps)
   return (
     <Script
       id="sentry-init"
-      strategy="beforeInteractive"
+      strategy="afterInteractive"
       src="https://browser.sentry-cdn.com/7.0.0/bundle.min.js"
       onLoad={() => {
         if (window.Sentry && dsn) {
@@ -62,7 +61,7 @@ export default function Sentry({ dsn, environment = 'production' }: SentryProps)
 export const captureException = (error: Error, context?: Record<string, any>) => {
   if (typeof window !== 'undefined' && window.Sentry) {
     if (context) {
-      window.Sentry.withScope((scope) => {
+      window.Sentry.withScope((scope: any) => {
         Object.keys(context).forEach(key => {
           scope.setTag(key, context[key]);
         });

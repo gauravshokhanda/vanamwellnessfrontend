@@ -6,7 +6,7 @@ import Analytics from '@/components/Analytics';
 import FacebookPixel from '@/components/FacebookPixel';
 import Hotjar from '@/components/Hotjar';
 import Sentry from '@/components/Sentry';
-import WebVitals from '@/components/WebVitals';
+
 import { OrganizationStructuredData, WebsiteStructuredData } from '@/components/StructuredData';
 
 const inter = Inter({ 
@@ -95,7 +95,7 @@ export default function RootLayout({
         <FacebookPixel pixelId={fbPixelId} />
         <Hotjar hotjarId={hotjarId} />
         <Sentry dsn={sentryDsn} environment={environment} />
-        <WebVitals gaId={gaId} />
+
         <OrganizationStructuredData />
         <WebsiteStructuredData />
         <AuthProvider>

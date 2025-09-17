@@ -8,7 +8,7 @@ import FAQSection from '@/components/FAQSection';
 import StickyBuyBar from '@/components/StickyBuyBar';
 import Footer from '@/components/Footer';
 import { ProductStructuredData } from '@/components/StructuredData';
-import { trackGAEvent, trackGAViewItem } from '@/components/Analytics';
+import { trackEvent, trackViewItem } from '@/components/Analytics';
 import { trackFBViewContent } from '@/components/FacebookPixel';
 import { triggerHotjarEvent } from '@/components/Hotjar';
 import { useEffect } from 'react';
@@ -16,13 +16,13 @@ import { useEffect } from 'react';
 export default function ProductPage() {
   useEffect(() => {
     // Track product page view
-    trackGAViewItem({
+    trackViewItem('INR', 2999, [{
       item_id: 'supercharged-supplement',
       item_name: 'Supercharged Plant-Based Energy Supplement',
       item_category: 'Supplements',
       price: 2999,
       currency: 'INR'
-    });
+    }]);
     
     trackFBViewContent(2999, 'INR', 'Supercharged Plant-Based Energy Supplement');
     triggerHotjarEvent('product_page_view');

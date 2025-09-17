@@ -22,9 +22,9 @@ export default function SuccessPage() {
           </div>
           
           <div className="bg-white p-8 rounded-2xl shadow-lg mb-8">
-            <h3 className="text-xl font-bold mb-4">What's Next?</h3>
+            <h3 className="text-xl font-bold mb-4">What&apos;s Next?</h3>
             <ul className="text-left space-y-3">
-              <li>✅ You'll receive an order confirmation email shortly</li>
+              <li>✅ You&apos;ll receive an order confirmation email shortly</li>
               <li>✅ Your supplement will be shipped within 24 hours</li>
               <li>✅ Track your order with the link in your email</li>
               <li>✅ Join our community for wellness tips and updates</li>

@@ -17,7 +17,7 @@ export default function FailurePage() {
               PAYMENT FAILED
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              We couldn't process your payment. Please try again or contact support.
+              We couldn&apos;t process your payment. Please try again or contact support.
             </p>
           </div>
           

@@ -1,6 +1,7 @@
 'use client';
 
 import { Quote, User } from 'lucide-react';
+import Image from 'next/image';
 
 interface Story {
   id: number;
@@ -19,9 +20,11 @@ export default function StoryCard({ story }: StoryCardProps) {
   return (
     <article className="bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
       <div className="aspect-video overflow-hidden">
-        <img 
+        <Image 
           src={story.image}
           alt={story.title}
+          width={400}
+          height={225}
           className="w-full h-full object-cover"
         />
       </div>

@@ -118,7 +118,7 @@ export default function OTPAuth({ onAuthSuccess, onBack }: OTPAuthProps) {
             <div className="text-center mb-6">
               <Phone className="w-12 h-12 text-[#22c55e] mx-auto mb-4" />
               <h3 className="text-xl font-bold text-[#004d26] mb-2">Enter Your Mobile Number</h3>
-              <p className="text-gray-600">We'll send you an OTP to verify your number</p>
+              <p className="text-gray-600">We&apos;ll send you an OTP to verify your number</p>
             </div>
             
             <div>
@@ -220,7 +220,7 @@ export default function OTPAuth({ onAuthSuccess, onBack }: OTPAuthProps) {
             <div className="text-center mb-6">
               <Mail className="w-12 h-12 text-[#22c55e] mx-auto mb-4" />
               <h3 className="text-xl font-bold text-[#004d26] mb-2">Enter Your Email Address</h3>
-              <p className="text-gray-600">We'll send you an OTP to verify your email</p>
+              <p className="text-gray-600">We&apos;ll send you an OTP to verify your email</p>
             </div>
             
             <div>

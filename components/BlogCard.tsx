@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, ArrowRight } from 'lucide-react';
 
 interface BlogPost {
@@ -20,9 +21,11 @@ export default function BlogCard({ post }: BlogCardProps) {
   return (
     <article className="bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
       <div className="aspect-video overflow-hidden">
-        <img 
+        <Image 
           src={post.image}
           alt={post.title}
+          width={400}
+          height={225}
           className="w-full h-full object-cover"
         />
       </div>

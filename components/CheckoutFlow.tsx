@@ -271,7 +271,7 @@ export default function CheckoutFlow({ onOrderComplete }: CheckoutFlowProps) {
               </h2>
               
               <p className="text-gray-600 mb-6">
-                Thank you for your order. We'll send you a confirmation email shortly.
+                Thank you for your order. We&apos;ll send you a confirmation email shortly.
               </p>
               
               <div className="bg-gray-50 rounded-xl p-6 mb-6">
@@ -303,7 +303,7 @@ export default function CheckoutFlow({ onOrderComplete }: CheckoutFlowProps) {
                 </div>
                 
                 <p className="text-sm text-gray-600">
-                  We'll send you SMS updates about your order status.
+                  We&apos;ll send you SMS updates about your order status.
                   Expected delivery: {new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toLocaleDateString()}
                 </p>
               </div>

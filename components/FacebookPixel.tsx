@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Script from 'next/script';
+import Image from 'next/image';
 
 interface FacebookPixelProps {
   pixelId?: string;
@@ -39,9 +40,9 @@ export default function FacebookPixel({ pixelId }: FacebookPixelProps) {
         `}
       </Script>
       <noscript>
-        <img
-          height="1"
-          width="1"
+        <Image
+          height={1}
+          width={1}
           style={{ display: 'none' }}
           src={`https://www.facebook.com/tr?id=${pixelId}&ev=PageView&noscript=1`}
           alt="Facebook Pixel"
@@ -105,6 +106,10 @@ export const trackFBLead = () => {
 // Declare fbq for TypeScript
 declare global {
   interface Window {
-    fbq: (...args: any[]) => void;
+    fbq: {
+      (...args: any[]): void;
+      q?: any[];
+      l?: number;
+    };
   }
 }

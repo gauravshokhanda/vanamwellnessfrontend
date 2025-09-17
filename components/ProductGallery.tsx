@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 const images = [
   'https://images.pexels.com/photos/7585607/pexels-photo-7585607.jpeg',
@@ -15,9 +16,11 @@ export default function ProductGallery() {
   return (
     <div className="space-y-4">
       <div className="aspect-square bg-gradient-light-bg rounded-2xl overflow-hidden">
-        <img 
+        <Image 
           src={images[currentImage]}
           alt="Supercharged Supplement"
+          width={400}
+          height={400}
           className="w-full h-full object-cover"
         />
       </div>
@@ -33,9 +36,11 @@ export default function ProductGallery() {
                 : 'border-gray-200 hover:border-[#22c55e]'
             }`}
           >
-            <img 
+            <Image 
               src={image}
               alt={`Product view ${index + 1}`}
+              width={100}
+              height={100}
               className="w-full h-full object-cover"
             />
           </button>

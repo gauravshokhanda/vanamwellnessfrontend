@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
             <p className="text-gray-300 leading-relaxed mb-6">
               Empowering your wellness journey with premium plant-based supplements 
-              crafted from nature's finest ingredients.
+              crafted from nature&apos;s finest ingredients.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-[#22c55e] rounded-full flex items-center justify-center hover:bg-[#d4af37] transition-colors">

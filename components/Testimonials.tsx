@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
@@ -49,7 +50,7 @@ export default function Testimonials() {
             WHAT OUR CUSTOMERS SAY
           </h2>
           <p className="text-xl text-gray-600">
-            Join thousands who've transformed their energy naturally
+            Join thousands who&apos;ve transformed their energy naturally
           </p>
         </div>
 
@@ -65,13 +66,15 @@ export default function Testimonials() {
               </div>
               
               <blockquote className="text-xl lg:text-2xl text-gray-800 mb-6 leading-relaxed">
-                "{testimonials[currentIndex].content}"
+                &ldquo;{testimonials[currentIndex].content}&rdquo;
               </blockquote>
               
               <div className="flex items-center justify-center">
-                <img 
+                <Image 
                   src={testimonials[currentIndex].image}
                   alt={testimonials[currentIndex].name}
+                  width={64}
+                  height={64}
                   className="w-16 h-16 rounded-full object-cover mr-4"
                 />
                 <div className="text-left">
