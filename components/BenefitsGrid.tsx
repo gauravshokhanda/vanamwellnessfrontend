@@ -1,40 +1,40 @@
-'use client';
+"use client";
 
-import { Zap, Shield, Heart, Brain } from 'lucide-react';
+import { Shield, Brain, Heart, Zap } from "lucide-react";
 
 const benefits = [
   {
     icon: Zap,
-    title: 'SUSTAINED ENERGY',
-    description: 'Natural caffeine from plant sources provides clean energy without the jitters or crash.',
+    title: "Sustained Energy",
+    description: "Natural caffeine and adaptogens provide clean, long-lasting energy without the crash"
   },
   {
     icon: Shield,
-    title: 'IMMUNE SUPPORT',
-    description: 'Seabuckthorn and Moringa boost your immune system with powerful antioxidants.',
+    title: "Immune Support", 
+    description: "Packed with vitamins and antioxidants to strengthen your natural defenses"
   },
   {
     icon: Heart,
-    title: 'HEART HEALTH',
-    description: 'Beetroot and natural nitrates support cardiovascular health and blood flow.',
+    title: "Heart Health",
+    description: "Supports cardiovascular wellness with natural ingredients"
   },
   {
     icon: Brain,
-    title: 'STRESS RELIEF',
-    description: 'Ashwagandha helps your body adapt to stress while maintaining peak performance.',
-  },
+    title: "Stress Relief",
+    description: "Adaptogenic herbs help your body manage stress and maintain balance"
+  }
 ];
 
 export default function BenefitsGrid() {
   return (
     <section className="py-20 bg-white">
-      <div className="section-container">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold uppercase mb-4 text-gradient">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
             WHY CHOOSE SUPERCHARGED?
           </h2>
-          <p className="text-xl text-gray-600">
-            Science-backed ingredients for optimal performance
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Experience the perfect blend of natural energy and wellness
           </p>
         </div>
 

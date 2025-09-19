@@ -24,16 +24,22 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/product/supercharged"
-              className="text-gray-700 hover:text-[#004d26] transition-colors"
-            >
-              Product
-            </Link>
-            <Link
               href="/blogs"
               className="text-gray-700 hover:text-[#004d26] transition-colors"
             >
               Blogs
+            </Link>
+            <Link
+              href="/products"
+              className="text-gray-700 hover:text-[#004d26] transition-colors"
+            >
+              Products
+            </Link>
+            <Link
+              href="/products/organic-turmeric-powder"
+              className="text-gray-700 hover:text-[#004d26] transition-colors"
+            >
+              Product
             </Link>
             <Link
               href="/stories"

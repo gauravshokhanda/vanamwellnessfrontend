@@ -99,10 +99,10 @@
 // module.exports = nextConfig;
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable static export
-  output: "export",
+  // Disable static export for development with API calls
+  // output: "export",
 
-  // Image settings (required for static hosting)
+  // Image settings
   images: {
     unoptimized: true,
     domains: ["vanamwellness.com"], // optional, safe to leave

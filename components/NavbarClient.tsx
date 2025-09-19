@@ -98,7 +98,7 @@ export default function NavbarClient() {
             <Link href="/" className={linkClasses}>
               Home
             </Link>
-            <Link href="/product/supercharged" className={linkClasses}>
+            <Link href="/products/organic-turmeric-powder" className={linkClasses}>
               Product
             </Link>
             <Link href="/blogs" className={linkClasses}>
